@@ -65,7 +65,7 @@ header nav ul li a:hover {
     display: flex;
     min-height: 250px;
     background-image: url("./images/starbirth.jpg");
-    background-position: stretch;
+    background-size: cover;
     justify-content: flex-end;
     padding: 20px;
 }
