@@ -65,7 +65,7 @@ header nav ul li a:hover {
     display: flex;
     height: 250px;
     background-image: url("./images/starbirth.jpg");
-    background-position: 80%;
+    background-position: cover;
     justify-content: flex-end;
     padding: 20px;
 }
@@ -87,9 +87,70 @@ header nav ul li a:hover {
 }
 
 .grid-container {
-    width: 80%;
+    height: 100%;
+    margin: 0;
     display: grid;
-    /* repeat(iterator, size) */
-    grid-template-columns: 3fr 4fr;
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: 0.5fr 2fr repeat(2, 1fr) 2fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px 10px;
+    grid-template-areas: "about-me bio bio bio bio" "work img-1 img-1 img-1 img-2" "work img-1 img-1 img-1 img-3" "work img-4 img-5 img-5 ." "contact contact-info contact-info contact-info contact-info";
+}
+
+.about-me {
+    grid-area: about-me;
+}
+
+.bio {
+    grid-area: bio;
+}
+
+.work {
+    grid-area: work;
+}
+
+.img-1 {
+    grid-area: img-1;
+   
+}
+.img-1 h3 {
+     background-image: url(".\images\NebulaTracker.png");
+}
+
+.img-2 {
+    grid-area: img-2;
+   
+}
+.img-2 h3{
+     background-image: url(".\images\nodejs.png");
+}
+.img-3 {
+    grid-area: img-3;
+    }
+    
+.img-3 h3{
+    background-image: url(".\images\CoEdSoftball.png");
+}
+
+.img-4 {
+    grid-area: img-4;
+
+}
+.img-4 h3{
+        background-image: url(".\images\honeycomb.jpg");
+}
+
+.img-5 {
+    grid-area: img-5;
+    
+}
+.img-5 h3{
+     background-image: url(".\images\run-buddyimg.png");
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.contact-info {
+    grid-area: contact-info;
 }
