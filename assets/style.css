@@ -136,8 +136,7 @@ header nav ul li a:hover {
     background-position: 60% 60%;
 }
 
-.img-1 h3,
-.img-1 h5 {
+.img-text {
     display: flex;
     align-self: flex-end;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
