@@ -1,159 +1,157 @@
-                :root {
-                   --primary-color: rgb(157, 240, 243);
-                   --secondary-color: #2a3a42;
-                   --tertiary-color: #df4d59;
-               }
-               
-               * {
-                   font-family: Helvetica, Arial, sans-serif;
-               }
-               
-               header {
-                   background-color: var(--secondary-color);
-                   display: flex;
-                   justify-content: space-between;
-                   flex-wrap: wrap;
-                   top: 0;
-                   z-index: 9999;
-               }
-               
-               .header-text-box {
-                   margin: 10px 0;
-                   background: var(--primary-color);
-               }
-               
-               header h1 {
-                   margin: 15px 10px 5px 50px;
-                   font-weight: bold;
-                   font-size: 32px;
-                   color: var(--secondary-color);
-                   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-               }
-               
-               header a {
-                   text-decoration: none;
-                   color: var(--tertiary-color);
-               }
-               
-               header nav {
-                   margin: 7px 0;
-               }
-               
-               header nav ul {
-                   display: flex;
-                   flex-wrap: wrap;
-                   justify-content: space-between;
-                   align-items: center;
-                   list-style: none;
-               }
-               
-               header nav ul li a {
-                   padding: 10px 15px;
-                   font-weight: lighter;
-                   font-size: 1.95vw;
-                   text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
-               }
-               
-               header nav ul li a:hover {
-                   background: var(--primary-color);
-                   color: var(--secondary-color);
-                   border-radius: 15px;
-                   text-shadow: none;
-               }
-               
-               .hero {
-                   display: flex;
-                   height: 250px;
-                   background-image: url("./images/starbirth.jpg");
-                   background-position: cover;
-                   justify-content: flex-end;
-                   padding: 20px;
-               }
-               
-               .hero h2 {
-                   color: var(--secondary-color);
-                   display: flex;
-                   align-self: flex-end;
-                   padding: 7px;
-                   font-size: 24px;
-                   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-                   background-color: var(--primary-color);
-               }
-               
-               .grid-wrapper {
-                   display: flex;
-                   width: 100%;
-                   justify-content: center;
-               }
-               
-               .grid-container {
-                   height: 100%;
-                   margin: 0;
-                   display: grid;
-                   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-                   /* 0.5fr 2fr repeat(2, 1fr) 2fr;*/
-                   grid-template-rows: repeat(4, minmax(25px, auto));
-                   /* repeat(5, 1fr);*/
-                   grid-template-areas: "about-me bio bio bio bio" "work img-1 img-1 img-1 img-2" "work img-1 img-1 img-1 img-3" "work img-4 img-5 img-5 ." "contact contact-info contact-info contact-info contact-info";
-               }
-               
-               .grid-item {
-                   padding: 20px 0;
-                   border-right: 2px solid var(--secondary-color);
-                   display: flex;
-                   align-items: center;
-                   justify-content: center;
-                   text-align: center;
-               }
-               
-               .work-img {
-                   width: 100%;
-                   min-height: 100px;
-                   background-size: cover;
-                   display: flex;
-                   padding: 15px;
-                   align-items: flex-end;
-                   position: relative;
-                   overflow: hidden;
-               }
-               
-               .about-me {
-                   grid-area: about-me;
-               }
-               
-               .bio {
-                   grid-area: bio;
-               }
-               
-               .work {
-                   grid-area: work;
-               }
-               
-               .img-1 {
-                   grid-area: img-1;
-                   background-image: url(./images/NebulaTracker.png);
-               }
-               
-               .img-2 {
-                   grid-area: img-2;
-               }
-               
-               .img-3 {
-                   grid-area: img-3;
-               }
-               
-               .img-4 {
-                   grid-area: img-4;
-               }
-               
-               .img-5 {
-                   grid-area: img-5;
-               }
-               
-               .contact {
-                   grid-area: contact;
-               }
-               
-               .contact-info {
-                   grid-area: contact-info;
-               }
+:root {
+    --primary-color: rgb(157, 240, 243);
+    --secondary-color: #2a3a42;
+    --tertiary-color: #df4d59;
+}
+
+* {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
+    z-index: 9999;
+}
+
+.header-text-box {
+    margin: 10px 0;
+    background: var(--primary-color);
+}
+
+header h1 {
+    margin: 15px 10px 5px 50px;
+    font-weight: bold;
+    font-size: 32px;
+    color: var(--secondary-color);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.95vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+}
+
+header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+.hero {
+    display: flex;
+    height: 250px;
+    background-image: url("./images/starbirth.jpg");
+    background-position: cover;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.hero h2 {
+    color: var(--secondary-color);
+    display: flex;
+    align-self: flex-end;
+    padding: 7px;
+    font-size: 24px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background-color: var(--primary-color);
+}
+
+.grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.grid-container {
+    height: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr repeat(2, 1fr) 2fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "about-me bio bio bio bio" "work img-1 img-1 img-1 img-2" "work img-1 img-1 img-1 img-3" "work img-4 img-5 img-5 ." "contact contact-info contact-info contact-info contact-info";
+}
+
+.grid-item {
+    padding: 20px 0;
+    border-right: 2px solid var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.work-img {
+    width: 100%;
+    min-height: 100px;
+    background-size: cover;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-me {
+    grid-area: about-me;
+}
+
+.bio {
+    grid-area: bio;
+}
+
+.work {
+    grid-area: work;
+}
+
+.img-1 {
+    grid-area: img-1;
+    background-image: url(./images/NebulaTracker.png);
+}
+
+.img-2 {
+    grid-area: img-2;
+}
+
+.img-3 {
+    grid-area: img-3;
+}
+
+.img-4 {
+    grid-area: img-4;
+}
+
+.img-5 {
+    grid-area: img-5;
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.contact-info {
+    grid-area: contact-info;
+}
