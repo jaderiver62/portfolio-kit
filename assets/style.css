@@ -1,5 +1,5 @@
 :root {
-    --primary-color: rgb(32, 190, 196);
+    --primary-color: rgb(157, 240, 243);
     --secondary-color: #2a3a42;
     --tertiary-color: #df4d59;
 }
@@ -27,7 +27,7 @@ header h1 {
     font-weight: bold;
     font-size: 32px;
     color: var(--secondary-color);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 header a {
@@ -64,7 +64,7 @@ header nav ul li a:hover {
 .hero {
     display: flex;
     height: 250px;
-    background-image: url("./images/hero.jpg");
+    background-image: url("./images/starbirth.jpg");
     background-position: 80%;
     justify-content: flex-end;
     padding: 20px;
@@ -74,7 +74,22 @@ header nav ul li a:hover {
     color: var(--secondary-color);
     display: flex;
     align-self: flex-end;
+    padding: 7px;
     font-size: 24px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     background-color: var(--primary-color);
+}
+
+.grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.grid-container {
+    width: 80%;
+    display: grid;
+    /* repeat(iterator, size) */
+    grid-template-columns: 3fr 4fr;
+    grid-template-rows: 1fr 3fr 1fr;
 }
