@@ -197,11 +197,15 @@ body {
 
 .contact-info {
     grid-area: contact-info;
-    grid-column: 2/span 7;
+    grid-column: 2/span 9;
     grid-row: 5;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     list-style: none;
+}
+
+.contact-info {
+    font-size: 1.2vw;
 }
