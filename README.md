@@ -14,5 +14,5 @@ https://jaderiver62.github.io/portfolio-kit/
 
 ## Contribution
 Made with ❤️ by Nina
-![Screenshot](./assets/images/jaderiver62.github.io_portfolio-kit_ screenshot.png)
+![Screenshot](assets\images\jaderiver62.github.io_portfolio-kit_ screenshot.png)
 ### ©️2020
