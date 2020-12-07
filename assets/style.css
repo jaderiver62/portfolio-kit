@@ -97,8 +97,8 @@ body {
     height: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template-rows: repeat(4, .5fr);
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(6, .5fr);
+    grid-template-columns: repeat(10, 2fr);
     grid-template-areas: "about-me bio bio bio bio" "work img-1 img-1 img-1 img-2" "work img-1 img-1 img-1 img-3" "work img-4 img-5 img-5 ." "contact contact-info contact-info contact-info contact-info";
 }
 
@@ -194,11 +194,11 @@ body {
 .contact {
     grid-area: contact;
     grid-column: 1;
-    grid-row: 5;
+    grid-row: 6;
 }
 
 .contact-info {
     grid-area: contact-info;
     grid-column: 2/span 7;
-    grid-row: 5;
+    grid-row: 6;
 }
