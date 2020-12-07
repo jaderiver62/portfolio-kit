@@ -235,8 +235,7 @@ body {
     header nav ul li a {
         font-size: 20px;
     }
-    footer h2,
-    footer div {
+    footer {
         text-align: center;
         width: 100%;
     }
@@ -245,7 +244,11 @@ body {
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
+}
 
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
