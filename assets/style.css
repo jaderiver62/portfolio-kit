@@ -84,6 +84,7 @@ header nav ul li a:hover {
     display: flex;
     width: 100%;
     justify-content: center;
+    margin: 15px;
 }
 
 .grid-container {
