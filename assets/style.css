@@ -139,12 +139,12 @@ header nav ul li a:hover {
 .img-text {
     display: flex;
     align-self: flex-end;
+    flex-direction: column;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     background-color: var(--primary-color);
     color: var(--secondary-color);
     height: 100px;
-    width: 125px;
-    overflow-wrap: break-word;
+    width: 200px;
 }
 
 .img-2 {
