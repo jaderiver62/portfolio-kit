@@ -243,6 +243,32 @@ footer h5 {
 }
 
 
+/* Media Query: Mobile Phones And Smaller */
+
+@media screen and (max-width: 575px) {
+    * {
+        margin: 5px;
+    }
+    .grid-item {
+        font-size: 1em;
+    }
+    .bio {
+        font-size: 1.75em;
+    }
+}
+
+
+/* Media Query: Desktop Screens And Smaller */
+
+@media screen and (max-width: 768px) {
+    .bio {
+        line-height: 2;
+        font-size: 1.25em;
+        padding: 10px;
+    }
+}
+
+
 /* Media Query: Desktop Screens And Smaller */
 
 @media screen and (max-width: 980px) {
@@ -260,9 +286,6 @@ footer h5 {
         margin: 0;
         width: 100%;
         justify-content: space-evenly;
-    }
-    header nav ul li a {
-        font-size: 1.25em;
     }
     footer {
         font-size: 1em;
@@ -285,36 +308,10 @@ footer h5 {
         overflow-wrap: center;
         width: 100%;
     }
-    .bio {
-        font-size: 1em;
-    }
     .grid-container {
         gap: 5px;
     }
-}
-
-
-/* Media Query: Desktop Screens And Smaller */
-
-@media screen and (max-width: 768px) {
     header nav ul li a {
-        font-size: 2em;
-    }
-}
-
-
-/* Media Query: Mobile Phones And Smaller */
-
-@media screen and (max-width: 575px) {
-    * {
-        margin: 5px;
-    }
-    .grid-item {
-        width: 25%;
-        font-size: 1em;
-    }
-    .bio p {
-        flex: 5;
-        font-size: 2em;
+        font-size: 1.45em;
     }
 }
