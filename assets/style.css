@@ -1,10 +1,13 @@
 /* Global Styles */
 
-:root {
+ :root {
     --primary-color: rgb(157, 240, 243);
     --secondary-color: #2a3a42;
     --tertiary-color: #df4d59;
 }
+
+
+/* End Global Styles */
 
 * {
     font-family: Helvetica, Arial, sans-serif;
@@ -67,11 +70,17 @@ header nav ul li a:hover {
 }
 
 
+/* End Header Styles */
+
+
 /* Body Styles */
 
 body {
     background-color: rgb(247, 247, 247);
 }
+
+
+/* Body Styles */
 
 
 /* Hero Styles */
@@ -94,6 +103,9 @@ body {
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     background-color: var(--primary-color);
 }
+
+
+/* End Hero Styles */
 
 
 /* Grid Styles */
@@ -135,6 +147,9 @@ body {
 }
 
 
+/* End Grid Styles */
+
+
 /* About Me and Bio Grid Styles */
 
 .about-me {
@@ -148,6 +163,9 @@ body {
     grid-column: 2/span 7;
     grid-row: 1;
 }
+
+
+/* End About Me and Bio Grid Styles */
 
 
 /* Work Grid Styles */
@@ -239,25 +257,28 @@ body {
 }
 
 
+/* End Work Grid Styles */
+
+
 /* Media Query: Desktop Screens And Smaller */
 
 @media screen and (max-width: 980px) {
     header {
-        padding-bottom: 0;
-        justify-content: center;
-    }
-    header h1 {
-        width: 100%;
-        text-align: center;
+        margin: 0;
     }
     header nav ul {
-        margin-top: 20px;
+        margin: 0;
         width: 100%;
-        justify-content: center;
     }
     header nav ul li a {
         font-size: 20px;
+        justify-content: center;
     }
+    .contact-info,
+    .bio {
+        font-size: 2vw;
+    }
+    h2,
     footer {
         text-align: center;
         width: 100%;
@@ -265,15 +286,17 @@ body {
 }
 
 
+/* End Styles*/
+
+
 /* Media Query: Desktop Screens And Smaller */
 
-@media screen and (max-width: 768px) {
-    section {
-        padding: 30px 15px;
-    }
-}
+@media screen and (max-width: 768px) {}
 
 
 /* Media Query: Mobile Phones And Smaller */
 
 @media screen and (max-width: 575px) {}
+
+
+/* End Styles*/
