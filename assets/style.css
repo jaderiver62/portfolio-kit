@@ -124,7 +124,7 @@
     
     .bio {
         grid-area: bio;
-        grid-column: 2/span 7;
+        grid-column: 2/span 9;
         grid-row: 1;
     }
     /* Work Grid Styles */
@@ -277,4 +277,9 @@
     }
     /* Media Query: Mobile Phones And Smaller */
     
-    @media screen and (max-width: 575px) {}
+    @media screen and (max-width: 575px) {
+        .bio {
+            width: 50%;
+            font-size: 1em;
+        }
+    }
