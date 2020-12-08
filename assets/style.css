@@ -94,7 +94,7 @@ body {
 
 .grid-container {
     max-width: 940px;
-    gap: 40px;
+    gap: 20px;
     height: 100%;
     margin: 0 auto;
     display: grid;
@@ -283,7 +283,7 @@ footer h5 {
         width: 100%;
     }
     .grid-container {
-        gap: 5px;
+        gap: 10px;
     }
     header nav ul li a {
         font-size: 1.85em;
