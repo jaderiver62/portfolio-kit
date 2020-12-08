@@ -94,7 +94,7 @@ body {
 
 .grid-container {
     max-width: 940px;
-    grid-gap: 40px;
+    gap: 40px;
     height: 100%;
     margin: 0 auto;
     display: grid;
@@ -289,23 +289,32 @@ footer h5 {
         font-size: 1em;
     }
     .grid-container {
-        grid-gap: 5px;
+        gap: 5px;
     }
 }
 
 
 /* Media Query: Desktop Screens And Smaller */
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    header nav ul li a {
+        font-size: 2em;
+    }
+}
 
 
 /* Media Query: Mobile Phones And Smaller */
 
 @media screen and (max-width: 575px) {
     * {
-        margin: 10px;
+        margin: 5px;
     }
-    .bio {
+    .grid-item {
+        width: 25%;
+        font-size: 1em;
+    }
+    .bio p {
+        flex: 5;
         font-size: 2em;
     }
 }
