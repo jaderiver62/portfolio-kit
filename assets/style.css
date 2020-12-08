@@ -247,7 +247,7 @@ footer h5 {
 
 @media screen and (max-width: 980px) {
     * {
-        margin: 0;
+        margin: 0 5px;
     }
     header {
         justify-content: flex-start;
@@ -262,14 +262,14 @@ footer h5 {
         justify-content: space-evenly;
     }
     header nav ul li a {
-        font-size: 1em;
+        font-size: 1.25em;
     }
     footer {
         font-size: 1em;
         width: 100%;
     }
     .contact-info {
-        font-size: 1em;
+        font-size: 2em;
         flex-direction: column;
     }
     .img-1,
@@ -285,6 +285,12 @@ footer h5 {
         overflow-wrap: center;
         width: 100%;
     }
+    .bio {
+        font-size: 1em;
+    }
+    .grid-container {
+        grid-gap: 5px;
+    }
 }
 
 
@@ -295,4 +301,11 @@ footer h5 {
 
 /* Media Query: Mobile Phones And Smaller */
 
-@media screen and (max-width: 575px) {}
+@media screen and (max-width: 575px) {
+    * {
+        margin: 10px;
+    }
+    .bio {
+        font-size: 2em;
+    }
+}
