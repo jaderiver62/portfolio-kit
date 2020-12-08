@@ -17,7 +17,7 @@ header {
 header h1 {
     margin: 15px 10px 5px 50px;
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 2em;
     color: var(--secondary-color);
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
@@ -42,7 +42,7 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.95vw;
+    font-size: 1.95em;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
 }
 
@@ -136,6 +136,10 @@ body {
     grid-row: 1;
 }
 
+.bio p {
+    font-size: 1em;
+}
+
 
 /* Work Grid Styles */
 
@@ -222,7 +226,7 @@ body {
 }
 
 .contact-info {
-    font-size: 1.2vw;
+    font-size: 1.5em;
 }
 
 footer h5 {
