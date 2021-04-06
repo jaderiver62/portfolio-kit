@@ -18,7 +18,6 @@ header h1 {
     margin: 15px 10px 5px 50px;
     font-weight: bold;
     font-size: 2em;
-     var(--primary-color);
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -26,14 +25,20 @@ header a {
     text-decoration: none;
     color: var(--tertiary-color);
 }
+a:link, a:visited {
+    text-decoration: none;
+    color:black;
+  }
+  
 
 header nav {
     margin: 7px 0;
 }
 
-a:link {
+header nav a:link {
     text-decoration: none;
-    color: black;
+    color: var(--primary-color);
+
 }
 
 header nav ul {
