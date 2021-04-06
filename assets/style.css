@@ -37,7 +37,7 @@ header nav {
 
 header nav a:link, header nav a:visited{
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--primary-color)  !important;
 
 }
 
