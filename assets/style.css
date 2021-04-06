@@ -27,7 +27,7 @@ header a {
 }
 a:link, a:visited {
     text-decoration: none;
-
+    color:black;
   }
   
 
@@ -35,11 +35,6 @@ header nav {
     margin: 7px 0;
 }
 
-header nav a:link, header nav a:visited{
-    text-decoration: none;
-    color: var(--primary-color)  !important;
-
-}
 
 header nav ul {
     display: flex;
@@ -49,11 +44,13 @@ header nav ul {
     list-style: none;
 }
 
-header nav ul li a {
+header nav ul li a:link, header nav ul li a:visited {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.95em;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 header nav ul li a:hover {
@@ -322,6 +319,4 @@ footer h5 {
         padding: 10px;
         width: 100%;
     }
-    
-    
 }
