@@ -35,7 +35,7 @@ header nav {
     margin: 7px 0;
 }
 
-header nav a:link, header nav a:visited {
+header nav a:link, header nav a:visited{
     text-decoration: none;
     color: var(--primary-color);
 
